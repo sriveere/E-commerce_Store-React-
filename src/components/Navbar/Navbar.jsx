@@ -8,7 +8,7 @@ const Navbar = () => {
     const classes = useStyles()
   return (
     <>
-        <AppBar position = 'fixed' classname = {classes.appBar} color = 'inherit'>
+        <AppBar position = 'fixed' className = {classes.appBar} color = 'inherit'>
             <Toolbar>
                 <Typography variant='h6' className={classes.title} color = 'inherit'>
                     <img src={logo} alt="Createbeyond 21" height='25px' className={classes.image}/>
@@ -17,7 +17,7 @@ const Navbar = () => {
                 <div className={classes.grow} />
                 <div className= {classes.button}>
                     <IconButton aria-label='Show cart Items' color = 'inherit'>
-                        <Badge badgeContent={2} color = 'secondary'>
+                        <Badge badgeContent={2} color = 'secondary' overlap="rectangular">
                             <ShoppingCart />
                         </Badge>
 
