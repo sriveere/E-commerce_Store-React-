@@ -4,7 +4,8 @@ import { CallMissedSharp, ShoppingCart } from '@material-ui/icons'
 import logo from '../../assets/logo.png'
 import useStyles from './styles'
 
-const Navbar = () => {
+const Navbar = ({cartTotal}) => {
+    console.log(cartTotal)
     const classes = useStyles()
   return (
     <>
@@ -17,7 +18,7 @@ const Navbar = () => {
                 <div className={classes.grow} />
                 <div className= {classes.button}>
                     <IconButton aria-label='Show cart Items' color = 'inherit'>
-                        <Badge badgeContent={2} color = 'secondary' overlap="rectangular">
+                        <Badge badgeContent={cartTotal} color = 'secondary' overlap="rectangular">
                             <ShoppingCart />
                         </Badge>
 
